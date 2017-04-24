@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thinkful Navigation</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="splash-nav">
+      <div class="hamburger">
+        <div class="hamburger-stripe"></div>
+        <div class="hamburger-stripe"></div>
+        <div class="hamburger-stripe"></div>
+      </div>
+      <div class="splash-nav-desktop-grid splash-nav-desktop-grid-closed">
+        <ul class="splash-nav-primary">
+          <li class="splash-nav-item splash-nav-item__logo"><a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="136" height="28" class="splash-nav-logo">
+              <g fill="#6799ff" fill-rule="evenodd">
+                <path d="M9 20h3V8H3V3h17V0H0v11h9v9z"></path>
+                <path d="M17 8v17H9v3h11V11h8V0h-3v8h-8zm25 3.5V20h3v-8.5h3.5V9h-10v2.5H42zM66 9v11h3V9h-3zm-11 4V9h-3v11h3v-4.5h4V20h3V9h-3v4h-4zm45 7h3v-4h5v-2.4h-5v-2h5.5V9H100v11zm-20-4.5L76 9h-3v11h3v-6.5l4 6.5h3V9h-3v6.5zM130 9h-3v11h8.5v-2.5H130V9zM93.5 9L90 14V9h-3v11h3v-5l3.5 5H97l-4-5.5L97 9h-3.5zm24 11.5c3 0 5.5-2.5 5.5-5.5V9h-3v5.5c0 1.5-.5 3-2.5 3s-2.5-1.5-2.5-3V9h-3v6c0 3 2.5 5.5 5.5 5.5z"></path>
+              </g>
+            </svg>
+          </a></li>
+          <li class="splash-nav-item">
+            <a href="#" class="splash-nav-toggle" id="splash-nav-courses-toggle">Courses <span aria-hidden="true" class="icon-navigatedown"></span></a>
+
+            <div id="splash-nav-courses-dropdown" class="splash-nav-dropdown splash-nav-dropdown-hidden">
+              <ul>
+                <li class="splash-nav-dropdown-item"><div class="splash-nav-dropdown-padding">
+                  <a class="splash-nav-web-dev-bootcamp-link" href="#">
+                    <img class="splash-nav-dropdown-image__bootcamp" src="http://tf-assets-prod.s3.amazonaws.com/wow-next/course-icons/career.gz.svg" alt="Web Development Bootcamp">
+                    <h4 class="splash-nav-dropdown-title splash-nav-dropdown-title__wdcp">Web Development Bootcamp</h4>
+                  </a>
+                  <div class="splash-nav-dropdown-cp-links">
+                    <a href="/bootcamp/web-development/flexible/">Flexible <span>Bootcamp</span></a>
+                    <a href="/bootcamp/web-development/full-time/">Full Time <span>Bootcamp</span></a>
+                  </div></div>
+                </li>
+                <li class="splash-nav-dropdown-item"><a class="splash-nav-dropdown-padding" href="#">
+                  <img class="splash-nav-dropdown-image__bootcamp" src="http://tf-assets-prod.s3.amazonaws.com/splash/data-science/data_science.svg" alt="Data Science">
+                  <h4 class="splash-nav-dropdown-title">Data Science Bootcamp</h4>
+                </a></li>
+                <li class="splash-nav-dropdown-item"><a class="splash-nav-dropdown-padding" href="#">
+                  <img src="http://tf-assets-prod.s3.amazonaws.com/wow-next/splash-nav/master-a-new-skill.gz.svg" alt="All courses">
+                  <h4 class="splash-nav-dropdown-title">All courses</h4>
+                </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="splash-nav-item">
+            <a href="#" class="splash-nav-toggle" id="splash-nav-education-toggle">How it works <span aria-hidden="true" class="icon-navigatedown"></span></a>
+
+            <div id="splash-nav-education-dropdown" class="splash-nav-dropdown splash-nav-dropdown-hidden">
+              <ul>
+                <li class="splash-nav-dropdown-item"><a class="splash-nav-dropdown-padding" href="#">
+                  <img src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/mentorship.gz.svg" alt="1-on-1 mentorship">
+                  <h4 class="splash-nav-dropdown-title">1-on-1 mentorship</h4>
+                </a></li>
+                <li class="splash-nav-dropdown-item"><a class="splash-nav-dropdown-padding" href="#">
+                  <img src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/career-services.gz.svg" alt="Career prep">
+                  <h4 class="splash-nav-dropdown-title">Career prep</h4>
+                </a></li>
+                <li class="splash-nav-dropdown-item"><a class="splash-nav-dropdown-padding" href="#">
+                  <img src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/guarantee.gz.svg" alt="Job guarantee">
+                  <h4 class="splash-nav-dropdown-title">Web Development job guarantee</h4>
+                </a></li>
+                <li class="splash-nav-dropdown-item"><a class="splash-nav-dropdown-padding" href="#">
+                  <img src="http://tf-assets-prod.s3.amazonaws.com/splash/nav-icons/jobs-report.gz.svg" alt="Student outcomes">
+                  <h4 class="splash-nav-dropdown-title">Student outcomes</h4>
+                </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="splash-nav-item"><a href="#">Reviews</a></li>
+          <li class="splash-nav-item"><a href="#">Pricing</a></li>
+        </ul>
+
+        <ul class="splash-nav-secondary">
+          <li class="splash-nav-item splash-nav-separator" style="display: none;"></li>
+          <li class="splash-nav-item"><a href="#">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>
+    $('.splash-nav-toggle').click(e => {
+        const sibling = $(e.target).siblings('.splash-nav-dropdown');
+        const isHidden = sibling.hasClass('splash-nav-dropdown-hidden');
+        // Hide all dropdowns
+        $('.splash-nav-dropdown').addClass('splash-nav-dropdown-hidden');
+
+        if (isHidden) {
+            // Show the one we selected if it was hidden before
+            sibling.removeClass('splash-nav-dropdown-hidden');
+        }
+    });
+    $('.hamburger').click(e => {
+        $('.splash-nav-desktop-grid').toggleClass('splash-nav-desktop-grid-closed');
+    });
+    </script>
+  </body>
+</html>
