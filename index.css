@@ -62,9 +62,12 @@ a {
 }
 
 .splash-nav-dropdown {
-    /* Don't display the dropdown sections in the mobile view */
-    display: none;
     background-color: #f9fbff;
+}
+
+
+.splash-nav-dropdown-hidden {
+    display: none;
 }
 
 .splash-nav-dropdown-title {
