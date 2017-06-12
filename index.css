@@ -83,22 +83,10 @@ a {
     margin: auto;
 }
 
-.splash-nav-dropdown-item img {
+.splash-nav-dropdown-image {
     display: none;
     width: 74px;
 }
-
-.splash-nav-web-dev-bootcamp-link {
-    /* Remove link to the web-dev bootcamp on mobile devices */
-    display: none;
-}
-
-.splash-nav-dropdown-cp-links a {
-    display: block;
-    padding: 8px 18px;
-    color: black;
-}
-
 
 @media (min-width: 576px) {
     .hamburger {
@@ -180,27 +168,6 @@ a {
 
     .splash-nav-web-dev-bootcamp-link {
         display: block;
-    }
-
-    .splash-nav-dropdown-cp-links span {
-        /* Shorten the flexible/full time links on desktop */
-        display: none;
-    }
-
-
-    .splash-nav-dropdown-cp-links {
-        /* Display the flexible/full time links side by side */
-        display: flex;
-        justify-content: center;
-    }
-
-    .splash-nav-dropdown-cp-links a {
-        color: #6799ff;
-    }
-
-    .splash-nav-dropdown-cp-links a:nth-child(1) {
-        /* Add a bar between the flexible/full time links */
-        border-right: 1px solid #cdddff;
     }
 }
 
