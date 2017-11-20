@@ -8,6 +8,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+svg {
+    margin-top: 5px;
+}
+
+img {
+    display: none;
+}
+
 .hamburger {
     width: 48px;
     height: 42px;
@@ -23,5 +43,46 @@ body {
     margin-bottom: 5px;
 }
 
-/* Add your CSS here */
+.top-container {
+    padding: 10px 20px 5px 20px;
+    border-bottom: solid 1px lightgray;    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.top-list {
+    padding: 15px 20px;
+    border-bottom: solid 1px lightgray;
+}
+
+.pop-down {
+    padding: 20px 0px 0px 0px;
+}
+
+.pop-down > li {
+    padding: 5px 0px;
+}
+
+.pop-down > li > a {
+    color: black;
+}
+
+.top-link {
+    color: rgb(103, 153, 255);
+    text-transform: uppercase;    
+}
+
+.main {
+    display: none;
+}
+
+.courses {
+    display: none;
+}
+
+.how {
+    display: none;
+}
 
