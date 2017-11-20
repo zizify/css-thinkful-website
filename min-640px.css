@@ -1,0 +1,83 @@
+@media (min-width: 640px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav, nav > * {
+        background: transparent;
+    }
+
+    a {
+        text-align: center;
+        width: 150px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    ul {
+        padding-left: 30px;
+        height: 50px;
+    }
+
+    img {
+        margin: 25px auto;
+        width: 75px;
+        height: auto;
+        display: block;
+    }
+
+    svg {
+        display: inline-block;
+    }
+
+    .top-list {
+        background: transparent;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .top-list > a:hover {
+        text-decoration: underline;
+        text-decoration-color: solid 1px #6799ff;
+    }
+
+    .pop-down {
+        width: 100%;
+        left: 0;
+        background-color: rgb(249,251,255);
+        border-top: solid 1px lightgray;
+        height: 220px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+    }
+
+    .pop-down > li {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main {
+        width: 450px;
+        margin-top: 20px;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sign-in {
+        position: absolute;
+        right: 20px;
+    }
+}

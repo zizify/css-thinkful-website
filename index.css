@@ -21,11 +21,16 @@ ul {
 }
 
 svg {
-    margin-top: 5px;
+    position: relative;
+    top: 5px;
 }
 
 img {
     display: none;
+}
+
+.top-item {
+    margin: 10px;
 }
 
 .hamburger {
@@ -35,21 +40,15 @@ img {
     border-radius: 2px;
     box-shadow: 0 0 2px #eeeeef;
     padding: 10px 10px;
+    float: right;
+    border-bottom: 1px solid #eeeeef;
+    
 }
 
 .hamburger-stripe {
     background-color: #6799ff;
     height: 3px;
     margin-bottom: 5px;
-}
-
-.top-container {
-    padding: 10px 20px 5px 20px;
-    border-bottom: solid 1px lightgray;    
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-content: center;
 }
 
 .top-list {
@@ -75,7 +74,9 @@ img {
 }
 
 .main {
+    width: 100%;
     display: none;
+    border-top: solid 1px lightgray;    
 }
 
 .courses {
